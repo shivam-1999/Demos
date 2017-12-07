@@ -1,2 +1,2 @@
 # Demos
-Simple HTML, CSS and JS codes. Codes by which begineers start from.
+Simple HTML, CSS and JS codes. Codes from which begineers start.
