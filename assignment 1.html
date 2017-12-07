@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title >Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link
+</head>
+
+<body>
+
+
+<div id="mainscreen">
+ <div id="text"><strong>Number of clicks : <span id="clicks">0</span></strong> </div>
+
+</div>
+ <div id="sidebar"> 
+
+
+   
+    <div id="button_1" class="button" onclick="changefontsize(1)"><strong>Button 1</strong></div>
+    <div id="button_2" class="button" onclick="changefontsize(2)"><strong>Button 2</strong></div>
+    <div id="button_3" class="button" onclick="changefontsize(3)"><strong>Button 3</strong></div>
+    <div id="button_5" class="button" onclick="changefontsize(5)"><strong>Button 5</strong></div>
+ 
+ </div>
+
+<script lang="javascript" type="text/javascript">
+	
+    var count = 0;
+    var present_call;
+    var last_call = 0;
+          
+    function changefontsize(size) { 
+        var present_call = Date.now();
+        if(((present_call - last_call)/1000)>2)
+        { 	var el = document.getElementById('text');
+         	var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+        	var fontSize = parseFloat(style); 
+        	el.style.fontSize = (fontSize + size) + 'px';
+
+         	count++;
+        	document.getElementById("clicks").innerHTML = count;
+        	last_call = present_call;
+		   
+		}      
+      } 
+      
+</script> 
+
+</body>
+</html>

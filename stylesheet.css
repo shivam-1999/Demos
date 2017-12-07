@@ -1,0 +1,53 @@
+
+*{	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px;
+
+}
+
+#sidebar
+{
+	background: #c49fd4;
+	height: 700px;
+	width: 30%;
+	display: block;
+	
+}
+
+#mainscreen{
+	background: #c4ecdf;
+	height: 700px;
+	width: 70%;
+	display: inline-block; 
+	float: right;
+
+	text-align: center;
+	line-height: 700px;
+	}
+
+.button{
+	display: block;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: #e6d3e8;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.button:hover{
+	background: white;
+}
+
+
+#text{
+	font-weight: 400px;
+	font-size: 30px;
+
+}
+
+a{
+	display: inline-block;
+}
